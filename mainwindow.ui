@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* MainWindow */
+QMainWindow {
+    background-color: #f0f0f0;
+}
+
+/* QPushButton */
+QPushButton {
+    background-color: #5b9bd5;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #4a86c5;
+}
+
+QPushButton:pressed {
+    background-color: #3a76b5;
+}
+
+/* QLineEdit */
+QLineEdit {
+    border: 1px solid #5b9bd5;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+/* QLabel */
+QLabel {
+    color: #333333;
+    font-size: 14px;
+}
+
+/* Scroll Area for QLabel */
+QScrollArea {
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+/* QProgressBar */
+QProgressBar {
+    border: 1px solid #5b9bd5;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+QProgressBar::chunk {
+    background-color: #5b9bd5;
+    width: 10px;
+    margin: 1px;
+}
+
+/* QMenuBar */
+QMenuBar {
+    background-color: #e7e7e7;
+}
+
+QMenuBar::item {
+    spacing: 3px; 
+    padding: 5px 15px;
+    background: transparent;
+    color: #000000;
+}
+
+QMenuBar::item:selected {
+    background-color: #5b9bd5;
+    color: white;
+}
+
+/* QStatusBar */
+QStatusBar {
+    background-color: #e7e7e7;
+    color: #333333;
+    border-top: 1px solid #c0c0c0;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="filePathLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>521</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openFileButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>91</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose FIle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="processFileButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>70</y>
+      <width>83</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>500</y>
+      <width>118</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveResultsButton">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>500</y>
+      <width>91</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Results</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="resultsTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>160</y>
+      <width>541</width>
+      <height>301</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
